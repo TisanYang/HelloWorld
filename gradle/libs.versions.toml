@@ -1,0 +1,47 @@
+[versions]
+junit = "4.13.2"
+androidxTestExtJunit = "1.1.5"
+androidxTestEspressoCore = "3.5.1"
+androidxCore = "1.9.0"
+androidxAppcompat = "1.6.1"
+googleAndroidMaterial = "1.9.0"
+androidxConstraintlayout = "2.1.4"
+androidxSwiperefreshlayout = "1.1.0"
+androidxCamera = "1.2.2"
+glide = "4.15.1"
+netty="4.1.65.Final"
+gson="2.10.1"
+adapter="4.0.1"
+shapeView="9.0"
+crashView="2.4.0"
+refreshLayoutVersion="2.0.6"
+filepicker="2.4.1'"
+
+[libraries]
+junit-junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-test-ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "androidxTestExtJunit" }
+androidx-test-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "androidxTestEspressoCore" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "androidxCore" }
+androidx-appcompat = { group = "androidx.appcompat", name = "appcompat", version.ref = "androidxAppcompat" }
+google-android-material = { group = "com.google.android.material", name = "material", version.ref = "googleAndroidMaterial" }
+androidx-constraintlayout = { group = "androidx.constraintlayout", name = "constraintlayout", version.ref = "androidxConstraintlayout" }
+androidx-swiperefreshlayout = { group = "androidx.swiperefreshlayout", name = "swiperefreshlayout", version.ref = "androidxSwiperefreshlayout" }
+androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "androidxCamera" }
+androidx-camera-camera2 = { group = "androidx.camera", name = "camera-camera2", version.ref = "androidxCamera" }
+androidx-camera-lifecycle = { group = "androidx.camera", name = "camera-lifecycle", version.ref = "androidxCamera" }
+androidx-camera-video = { group = "androidx.camera", name = "camera-video", version.ref = "androidxCamera" }
+androidx-camera-view = { group = "androidx.camera", name = "camera-view", version.ref = "androidxCamera" }
+androidx-camera-mlkit-vision = { group = "androidx.camera", name = "camera-mlkit-vision", version.ref = "androidxCamera" }
+androidx-camera-extensions = { group = "androidx.camera", name = "camera-extensions", version.ref = "androidxCamera" }
+bumptech-glide-glide = { group = "com.github.bumptech.glide", name = "glide", version.ref = "glide" }
+bumptech-glide-compiler = { group = "com.github.bumptech.glide", name = "compiler", version.ref = "glide" }
+io-netty-all = { group = "io.netty", name = "netty-all", version.ref = "netty" }
+google-code-gson = { group = "com.google.code.gson", name = "gson", version.ref = "gson" }
+base-recyclerview-adapter-helper = { group = "io.github.cymchad", name = "BaseRecyclerViewAdapterHelper", version.ref = "adapter" }
+shape-view = { group = "com.github.getActivity", name = "ShapeView", version.ref = "shapeView" }
+crash-view = { group = "cat.ereza", name = "customactivityoncrash", version.ref = "crashView" }
+refresh-layout-kernel = { group = "io.github.scwang90", name = "refresh-layout-kernel", version.ref = "refreshLayoutVersion" }
+refresh-header-classics = { group = "io.github.scwang90", name = "refresh-header-classics", version.ref = "refreshLayoutVersion" }
+refresh-footer-classics = { group = "io.github.scwang90", name = "refresh-footer-classics", version.ref = "refreshLayoutVersion" }
+
+[plugins]

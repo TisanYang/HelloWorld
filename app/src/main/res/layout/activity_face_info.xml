@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.FaceInfoActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_face"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_face_empty"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar" />
+
+    <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+        android:id="@+id/swipe_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp16"
+        app:layout_constraintBottom_toTopOf="@id/btn_add_face"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:itemCount="9"
+            tools:listitem="@layout/item_face" />
+    </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
+
+    <hf.car.wifi.video.ui.custom.DrawableCenterTextView
+        android:id="@+id/btn_add_face"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp20"
+        android:layout_marginEnd="@dimen/dp20"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/common_button"
+        android:drawablePadding="@dimen/dp10"
+        android:gravity="center"
+        android:text="@string/tv_add_face"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:drawableLeftCompat="@drawable/icon_face_upload"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

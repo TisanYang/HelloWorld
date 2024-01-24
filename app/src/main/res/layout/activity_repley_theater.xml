@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.ReplayTheaterActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_replay_theater"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/bg_white_r12"
+        android:elevation="@dimen/dp6"
+        android:paddingStart="@dimen/dp8"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:paddingBottom="@dimen/dp12"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp180"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <SeekBar
+            android:max="100"
+            android:progress="50"
+            app:layout_constraintTop_toBottomOf="@id/surface_view"
+            android:id="@+id/seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp30" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_device"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp38"
+            android:background="@color/color_EFF8FF"
+            app:layout_constraintTop_toBottomOf="@id/seekbar">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_device_info"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_device_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp10"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_signal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_signal_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp10"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/view_surface_parent"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp36"
+            android:layout_marginTop="@dimen/dp1"
+            android:background="@drawable/bg_eff8ff_r10"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/view_device"
+            tools:visibility="visible">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_driver_name"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_driver_name"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp10"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_car_number"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="@dimen/dp10"
+                android:gravity="center_vertical"
+                android:text="@string/tv_car_number"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp10"
+                app:layout_constraintEnd_toEndOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tv_channel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            android:drawablePadding="@dimen/dp4"
+            android:text="@string/tv_now_channel"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp12"
+            app:drawableStartCompat="@drawable/icon_blue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view_surface_parent" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp12"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_channel"
+            app:spanCount="4"
+            tools:itemCount="6"
+            tools:listitem="@layout/item_video_channel" />
+
+
+        <LinearLayout
+            android:background="@color/white"
+            android:layout_marginTop="@dimen/dp10"
+            android:id="@+id/ll_control"
+            app:layout_constraintTop_toBottomOf="@id/recycler_view"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/video_channel_button"
+                android:textColor="@drawable/video_channel_text"
+                android:textSize="10sp"
+                android:text="暂停"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/tv_pause"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/video_channel_button"
+                android:textColor="@drawable/video_channel_text"
+                android:textSize="10sp"
+                android:text="后退"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/tv_back"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/video_channel_button"
+                android:textColor="@drawable/video_channel_text"
+                android:textSize="10sp"
+                android:text="快进"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/tv_front"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:background="@drawable/video_channel_button"
+                android:textColor="@drawable/video_channel_text"
+                android:textSize="10sp"
+                android:text="停止"
+                android:layout_margin="@dimen/dp5"
+                android:id="@+id/tv_stop"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+
+        </LinearLayout>
+
+        <com.scwang.smart.refresh.layout.SmartRefreshLayout
+            android:layout_width="match_parent"
+            android:id="@+id/smart_refresh"
+            android:layout_height="0dp"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_control">
+
+            <com.scwang.smart.refresh.header.ClassicsHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_list"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+            <com.scwang.smart.refresh.footer.ClassicsFooter
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </com.scwang.smart.refresh.layout.SmartRefreshLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_r12"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_camera"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center"
+        android:text="@string/tv_dialog_camera"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/color_1A000000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_update_local"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center"
+        android:text="@string/tv_dialog_local"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp14" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/color_1A000000" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/btn_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center"
+        android:text="@string/tv_dialog_cancel"
+        android:textColor="@color/color_999999"
+        android:textSize="@dimen/sp14" />
+</androidx.appcompat.widget.LinearLayoutCompat>

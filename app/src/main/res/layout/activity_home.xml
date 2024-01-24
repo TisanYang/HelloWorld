@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.HomeActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/home_top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:gravity="center"
+        android:text="@string/tv_home_page"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_network"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="@dimen/dp12"
+        android:paddingTop="@dimen/dp14"
+        android:paddingEnd="@dimen/dp12"
+        android:paddingBottom="@dimen/dp12"
+        android:text="@string/tv_wifi_connecting"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintTop_toBottomOf="@id/home_top_bar" />
+
+    <androidx.core.widget.NestedScrollView
+        app:layout_constraintTop_toBottomOf="@id/tv_network"
+        android:layout_width="match_parent"
+        android:fillViewport="true"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_video"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_face">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_video"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_face"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_face"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_face"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_bsd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_video">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_bsd"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_dsm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_bsd">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_dsm"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_replay_theater"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_dsm">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_replay_theater"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_time_calibration"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_replay_theater">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_time_calibration"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_upgrade"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                app:layout_constraintTop_toBottomOf="@id/btn_time_calibration">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_upgrade"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/btn_test"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp189"
+                android:layout_marginStart="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginEnd="@dimen/dp12"
+                android:background="@drawable/bg_white_r12"
+                android:elevation="@dimen/dp6"
+                android:visibility="gone"
+                app:layout_constraintTop_toBottomOf="@id/btn_upgrade">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp3"
+                    android:src="@drawable/icon_home_video"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp14"
+                    android:gravity="center"
+                    android:text="@string/tv_test"
+                    android:textColor="@color/color_333333"
+                    android:textSize="@dimen/sp14"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

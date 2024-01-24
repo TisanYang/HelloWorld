@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/dp30">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_ch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/video_channel_button"
+        android:textColor="@drawable/video_channel_text"
+        android:textSize="@dimen/sp12"
+        tools:text="CH1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

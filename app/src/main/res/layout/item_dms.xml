@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.hjq.shape.layout.ShapeConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/dp20"
+    app:shape_solidColor="@color/white"
+    app:shape_strokeColor="@color/color_1A000000"
+    app:shape_strokeSize="@dimen/dp2">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:text="算法名称"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp30"
+        android:paddingStart="@dimen/dp10"
+        android:paddingTop="@dimen/dp3"
+        android:paddingEnd="@dimen/dp10"
+        android:paddingBottom="@dimen/dp3"
+        android:text="设置"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/tv_title"
+        app:layout_constraintEnd_toStartOf="@id/switch_view"
+        app:layout_constraintTop_toTopOf="@id/tv_title"
+        app:shape_radius="@dimen/dp8"
+        app:shape_solidPressedColor="@color/color_999999"
+        app:shape_strokeColor="@color/black"
+        app:shape_strokeSize="@dimen/dp1" />
+
+    <Switch
+        android:id="@+id/switch_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/dp20"
+        app:layout_constraintBottom_toBottomOf="@id/tv_save"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_save"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:nestedScrollingEnabled="false"
+        android:overScrollMode="never"
+        android:layout_marginTop="@dimen/dp10"
+        app:layout_constraintTop_toBottomOf="@id/switch_view"
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</com.hjq.shape.layout.ShapeConstraintLayout>

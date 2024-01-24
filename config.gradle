@@ -1,0 +1,29 @@
+ext {
+
+    android_sdk_version = [
+            compileSdk: 33,
+            minSdk    : 23,
+            targetSdk : 33,
+    ]
+
+    app_version = [
+            //例如1.2.5_B01就是10020501
+            versionCode: 1000700,
+    ]
+
+    app_config = [
+            apkName       : "wifi_car_",
+            versionName   : getVersionName(app_version.versionCode.toString()),
+            versionDate   : getDate(),
+    ]
+}
+
+def static getDate() {
+    def date = new Date()
+    def formattedDate = date.format('yyyyMMddHHmm')
+    return formattedDate
+}
+
+def static getVersionName(versionCode) {
+    return "v" + versionCode[0] + "." + versionCode[1, 2] + "." + versionCode[3, 4]
+}

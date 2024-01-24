@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.VideoPlayActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_video_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:background="@drawable/bg_white_r12"
+        android:elevation="@dimen/dp6"
+        android:paddingStart="@dimen/dp8"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:paddingBottom="@dimen/dp12"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

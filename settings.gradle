@@ -1,0 +1,26 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        jcenter()
+    }
+}
+dependencyResolutionManagement {
+    defaultLibrariesExtensionName.set('projectLibs')
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter()
+        maven { url 'https://jitpack.io' }
+    }
+    versionCatalogs {
+        libs {
+            from(files('gradle/libs.versions.toml'))
+        }
+    }
+}
+rootProject.name = "CarWifiVideo"
+include ':app'
+include ':mvvm'

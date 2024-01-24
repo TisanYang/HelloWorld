@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">标定视频机</string>
+
+    <!-- common -->
+    <string name="tv_guide_content">标定助手</string>
+
+    <!-- guide -->
+    <string name="tv_load_data_error">获取数据异常请重试</string>
+
+    <!-- home -->
+    <string name="tv_home_page">标定助手</string>
+    <string name="tv_network_disconnect">当前设备未连接,请连接设备！</string>
+    <string name="tv_network_connect">当前设备已连接！</string>
+    <string name="tv_video">视频标定</string>
+    <string name="tv_face">人脸图片维护</string>
+    <string name="tv_bsd">BSD标定</string>
+    <string name="tv_dsm">DSM算法维护</string>
+    <string name="tv_replay_theater">录像回放</string>
+    <string name="tv_time_calibration">时间标定</string>
+    <string name="tv_upgrade">在线升级</string>
+    <string name="tv_test">标定测试入口</string>
+
+    <!-- wifi -->
+    <string name="tv_wifi_page">车机连接</string>
+    <string name="tv_wifi_connecting">车机连接检测中…</string>
+    <string name="tv_wifi_fail">车机连接失败</string>
+    <string name="tv_wifi_fail_mobile">车机连接失败(移动网络)</string>
+    <string name="tv_wifi_success">车机连接成功</string>
+    <string name="tv_wifi_message">1.点击下方“连接车机”或手动进入系统WLAN/WIFI设置中连接车机！</string>
+    <string name="tv_wifi_connect">连接车机</string>
+    <string name="tv_wifi_message2">2.连接成功后，打开标定助手APP重新进入！</string>
+
+    <!-- video -->
+    <string name="tv_video_page">视频标定</string>
+    <string name="tv_device_name">%s（%s）</string>
+    <string name="tv_device_name2">设备名称:%s（设备ID:%s）</string>
+    <string name="tv_driver_name">驾驶员：%s</string>
+    <string name="tv_car_number">车牌：%s</string>
+    <string name="tv_signal_number">信号强度：%d</string>
+    <string name="tv_now_channel">当前视频通道</string>
+    <string name="tv_channels">CH%d</string>
+    <string name="tv_channel_1">CH1</string>
+    <string name="tv_channel_2">CH2</string>
+    <string name="tv_channel_3">CH3</string>
+    <string name="tv_channel_4">CH4</string>
+    <string name="tv_channel_5">CH5</string>
+    <string name="tv_channel_6">CH6</string>
+
+    <!-- face -->
+    <string name="tv_face_empty">暂无人脸图片</string>
+    <string name="tv_person_number_s">人员编号：%s</string>
+    <string name="tv_person_name_s">姓&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;名：%s</string>
+    <string name="tv_person_uZGZ_s">资&#160;&#160;格&#160;&#160;证：%s</string>
+    <string name="tv_add_face">人脸录入</string>
+    <string name="tv_person_total_error">当前设备人数已经达到上限</string>
+
+    <!-- camera -->
+    <string name="tv_image_camera_page">照片采集</string>
+    <string name="tv_camera_message">请保持人脸在取景框内！</string>
+    <string name="tv_take_camera">拍照</string>
+
+    <!-- image -->
+    <string name="tv_image_local_page">选择文件</string>
+    <string name="tv_person_info_page">人员照片</string>
+
+    <!-- upload -->
+    <string name="tv_upload_face_page">人脸照片上传</string>
+    <string name="tv_load_pic_fail">照片获取失败</string>
+    <string name="tv_plan_upload_face">准备上报人脸照片</string>
+    <string name="tv_upload_face_ing">正在上报人脸照片……</string>
+    <string name="tv_upload_face_success">上报人脸照片成功</string>
+    <string name="tv_upload_face_fail">上报人脸照片失败</string>
+    <string name="tv_please_ed_name">请输入姓名</string>
+    <string name="tv_please_ed_nickname">请输2–8个昵称</string>
+    <string name="tv_start_upload">开始上传</string>
+    <string name="tv_restart_upload">重新上传</string>
+    <string name="tv_back_page">返回首页</string>
+
+    <!-- dialog -->
+    <string name="tv_dialog_camera">拍照</string>
+    <string name="tv_dialog_local">上传本地文件</string>
+    <string name="tv_dialog_submit">确认</string>
+    <string name="tv_dialog_cancel">取消</string>
+    <string name="tv_dialog_cancel2">再想想</string>
+    <string name="tv_dialog_delete">确定删除角色？</string>
+
+    <!-- item -->
+    <string name="tv_look">查看</string>
+    <string name="tv_delete">删除</string>
+
+</resources>

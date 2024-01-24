@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.TimeCalibrationActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_time_calibration"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/ll_device_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:shape_radius="@dimen/dp28"
+        app:shape_solidColor="@color/white"
+        app:shape_strokeColor="@color/cardview_dark_background"
+        app:shape_strokeSize="@dimen/dp2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:text="设备时间："
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/tv_device_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <com.hjq.shape.layout.ShapeLinearLayout
+        android:id="@+id/ll_sys_time"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp60"
+        android:layout_margin="@dimen/dp20"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ll_device_time"
+        app:shape_radius="@dimen/dp28"
+        app:shape_solidColor="@color/white"
+        app:shape_strokeColor="@color/cardview_dark_background"
+        app:shape_strokeSize="@dimen/dp2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp20"
+            android:text="网络时间："
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:id="@+id/tv_sys_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/dp10"
+            android:text="-"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16" />
+
+    </com.hjq.shape.layout.ShapeLinearLayout>
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_sync"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center"
+        android:text="一键同步"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ll_sys_time"
+        app:shape_radius="@dimen/dp28"
+        app:shape_solidColor="@color/white"
+        app:shape_solidPressedColor="@color/color_999999" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:text="1.查询设备时间\n2.查询手机上的时间\n3.点击同步,把手机上的时间上传到设备"
+        android:textColor="#ff0000"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_sync" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 圆角图片style样式 -->
+    <style name="roundedCornerImageStyle_r12">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp12</item>
+    </style>
+
+    <!-- 圆角图片style样式 -->
+    <style name="roundedCornerImageStyle2_r12">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSizeTopLeft">@dimen/dp12</item>
+        <item name="cornerSizeTopRight">@dimen/dp12</item>
+    </style>
+
+    <!-- 圆角图片style样式 -->
+    <style name="roundedCornerImageStyle_r8">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/dp8</item>
+    </style>
+
+    <!-- 圆形图片的style -->
+    <style name="circleImageStyle">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+</resources>

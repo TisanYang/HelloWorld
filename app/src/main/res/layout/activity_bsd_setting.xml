@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.BsdSettingActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:center_title="@string/tv_bsd"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/bsd_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginEnd="@dimen/dp12"
+        android:background="@drawable/bg_white_r12"
+        android:elevation="@dimen/dp6"
+        android:paddingStart="@dimen/dp8"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        android:paddingBottom="@dimen/dp12"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <SurfaceView
+            android:id="@+id/surface_view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp224"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/ll_direction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/surface_view">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="第一步:选择BSD"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_top"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginStart="@dimen/dp10"
+                android:gravity="center"
+                android:text="前"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                app:shape_radius="@dimen/dp8"
+                app:shape_solidColor="@color/white"
+                app:shape_solidPressedColor="@color/color_999999"
+                app:shape_strokeColor="@color/black"
+                app:shape_strokeSize="@dimen/dp1" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_bottom"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginStart="@dimen/dp5"
+                android:gravity="center"
+                android:text="后"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                app:shape_radius="@dimen/dp8"
+                app:shape_solidColor="@color/white"
+                app:shape_solidPressedColor="@color/color_999999"
+                app:shape_strokeColor="@color/black"
+                app:shape_strokeSize="@dimen/dp1" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_left"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginStart="@dimen/dp5"
+                android:gravity="center"
+                android:text="左"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                app:shape_radius="@dimen/dp8"
+                app:shape_solidColor="@color/white"
+                app:shape_solidPressedColor="@color/color_999999"
+                app:shape_strokeColor="@color/black"
+                app:shape_strokeSize="@dimen/dp1" />
+
+            <com.hjq.shape.view.ShapeTextView
+                android:id="@+id/tv_right"
+                android:layout_width="@dimen/dp40"
+                android:layout_height="@dimen/dp30"
+                android:layout_marginStart="@dimen/dp5"
+                android:gravity="center"
+                android:text="右"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp14"
+                app:shape_radius="@dimen/dp8"
+                app:shape_solidColor="@color/white"
+                app:shape_solidPressedColor="@color/color_999999"
+                app:shape_strokeColor="@color/black"
+                app:shape_strokeSize="@dimen/dp1" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/tv_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:text="第二步:设置BSD"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/ll_direction" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_get_config"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:text="设置"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toBottomOf="@id/tv_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.08"
+            app:layout_constraintStart_toEndOf="@id/tv_two"
+            app:layout_constraintTop_toTopOf="@id/tv_two"
+            app:shape_radius="@dimen/dp8"
+            app:shape_solidColor="@color/white"
+            app:shape_solidPressedColor="@color/color_999999"
+            app:shape_strokeColor="@color/black"
+            app:shape_strokeSize="@dimen/dp1" />
+
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_get_defaule"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:text="恢复"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toBottomOf="@id/tv_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.293"
+            app:layout_constraintStart_toEndOf="@id/tv_two"
+            app:layout_constraintTop_toTopOf="@id/tv_two"
+            app:shape_radius="@dimen/dp8"
+            app:shape_solidColor="@color/white"
+            app:shape_solidPressedColor="@color/color_999999"
+            app:shape_strokeColor="@color/black"
+            app:shape_strokeSize="@dimen/dp1" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_luck_time"
+            android:layout_width="@dimen/dp110"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:text="锁车时间:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toBottomOf="@id/tv_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.528"
+            app:layout_constraintStart_toEndOf="@id/tv_two"
+            app:layout_constraintTop_toTopOf="@id/tv_two"
+            app:shape_radius="@dimen/dp8"
+            app:shape_solidColor="@color/white"
+            app:shape_solidPressedColor="@color/color_999999"
+            app:shape_strokeColor="@color/black"
+            app:shape_strokeSize="@dimen/dp1" />
+
+        <com.hjq.shape.view.ShapeTextView
+            android:id="@+id/tv_luck_time_set"
+            android:layout_width="@dimen/dp90"
+            android:layout_height="@dimen/dp30"
+            android:gravity="center"
+            android:text="设置锁车时间"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp14"
+            app:layout_constraintBottom_toBottomOf="@id/tv_two"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.798"
+            app:layout_constraintStart_toEndOf="@id/tv_two"
+            app:layout_constraintTop_toTopOf="@id/tv_two"
+            app:shape_radius="@dimen/dp8"
+            app:shape_solidColor="@color/white"
+            app:shape_solidPressedColor="@color/color_999999"
+            app:shape_strokeColor="@color/black"
+            app:shape_strokeSize="@dimen/dp1" />
+
+        <hf.car.wifi.video.ui.view.BsdMovingView
+            android:id="@+id/touch_bsd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp224"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

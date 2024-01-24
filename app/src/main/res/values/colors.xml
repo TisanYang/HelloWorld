@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="transparent">#00000000</color>
+    <color name="color_1A000000">#1A000000</color>
+
+    <color name="color_707070">#707070</color>
+
+    <color name="color_333333">#333333</color>
+    <color name="color_666666">#666666</color>
+    <color name="color_999999">#999999</color>
+
+    <color name="color_EE1b23">#EE1b23</color>
+    <color name="color_FF5454">#FF5454</color>
+    <color name="color_F47372">#F47372</color>
+    <color name="color_B3D8615A">#B3D8615A</color>
+
+    <color name="color_6E7AC7">#6E7AC7</color>
+    <color name="color_EFF8FF">#EFF8FF</color>
+    <color name="color_E3E8F1">#E3E8F1</color>
+    <color name="color_CBD4F8">#CBD4F8</color>
+
+    <color name="color_2155C2">#2155C2</color>
+    <color name="color_3A7AF9">#3A7AF9</color>
+    <color name="color_59C4DB">#59C4DB</color>
+    <color name="color_4BE5E0">#4BE5E0</color>
+
+    <color name="color_72E190">#72E190</color>
+    <color name="color_B372E190">#B372E190</color>
+
+    <color name="color_FFCE5D">#FFCE5D</color>
+
+    <!--米白&砖红灰-->
+    <color name="color_F7F3E7">#F7F3E7</color>
+    <color name="color_D8615A">#D8615A</color>
+
+    <!--枫舞灰&梦幻蓝-->
+    <color name="color_D5E9EA">#D5E9EA</color>
+    <color name="color_5CA8B5">#5CA8B5</color>
+
+    <!--碧青&梨色-->
+    <color name="color_007E7F">#007E7F</color>
+    <color name="color_FCDDAE">#FCDDAE</color>
+</resources>

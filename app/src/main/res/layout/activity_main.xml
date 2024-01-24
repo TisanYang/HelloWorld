@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.MainActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="IP:"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_ip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Port:"
+        android:textColor="@color/black" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_port"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_connect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="连接" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_disconnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="断开连接" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_sys_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取系统信息" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_dev_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取设备状态" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_face_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取所有人脸数据" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_update_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="上传人脸数据" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_delete_face"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除所有人脸数据" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_open_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启实时视频" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_close_video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="关闭实时视频" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/t_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black" />
+</androidx.appcompat.widget.LinearLayoutCompat>

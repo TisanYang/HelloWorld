@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.UpdateBitmapActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_upload_face_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/img_result"
+        android:layout_width="@dimen/dp144"
+        android:layout_height="@dimen/dp144"
+        android:layout_marginTop="@dimen/dp47"
+        android:scaleType="center"
+        android:src="@drawable/icon_default_face"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:shapeAppearanceOverlay="@style/circleImageStyle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_result"
+        tools:text="@string/tv_plan_upload_face" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tv_please_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp23"
+        android:text="@string/tv_please_ed_name"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_result" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/ed_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp16"
+        android:background="@drawable/bg_white_r12"
+        android:hint="@string/tv_please_ed_nickname"
+        android:paddingStart="@dimen/dp10"
+        android:paddingEnd="@dimen/dp10"
+        android:textColor="@color/color_333333"
+        android:textSize="@dimen/sp12"
+        app:layout_constraintTop_toBottomOf="@id/tv_please_name" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp45"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/ed_name">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_update"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="@dimen/dp30"
+            android:background="@drawable/common_button"
+            android:text="@string/tv_start_upload"
+            android:textColor="@drawable/video_channel_text"
+            android:textSize="@dimen/sp12" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_back"
+            android:layout_width="@dimen/dp120"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_delete_25"
+            android:text="@string/tv_back_page"
+            android:textColor="@color/color_3A7AF9"
+            android:textSize="@dimen/sp12" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.constraintlayout.widget.ConstraintLayout>

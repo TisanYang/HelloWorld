@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="TopToolBar">
+        <attr name="left_icon" format="reference" />
+        <attr name="left_icon_visible" format="boolean" />
+        <attr name="center_title" format="string" />
+        <attr name="center_title_color" format="reference" />
+        <attr name="center_title_size" format="reference" />
+        <attr name="right_icon" format="reference" />
+        <attr name="right_icon_visible" format="boolean" />
+        <attr name="right_title" format="string" />
+        <attr name="right_title_color" format="reference" />
+        <attr name="right_title_size" format="reference" />
+    </declare-styleable>
+
+</resources>

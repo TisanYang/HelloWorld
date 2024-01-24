@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.BsdSettingActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="设备升级"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_upgrade_info"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center"
+        android:text="获取版本信息"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/top_bar"
+        app:shape_radius="@dimen/dp30"
+        app:shape_solidColor="@color/color_999999"
+        app:shape_solidPressedColor="@color/color_1A000000" />
+
+    <com.hjq.shape.view.ShapeTextView
+        android:id="@+id/tv_upgrade"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:layout_marginTop="@dimen/dp40"
+        android:gravity="center"
+        android:text="选择文件"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_upgrade_info"
+        app:shape_radius="@dimen/dp30"
+        app:shape_solidColor="@color/color_999999"
+        app:shape_solidPressedColor="@color/color_1A000000" />
+
+    <TextView
+        android:id="@+id/tv_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_margin="@dimen/dp50"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_upgrade" />
+
+    <TextView
+        android:id="@+id/tv_file_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="-"
+        android:layout_margin="@dimen/dp50"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_content" />
+
+    <Button
+        android:layout_marginTop="@dimen/dp50"
+        app:layout_constraintTop_toBottomOf="@id/tv_file_name"
+        android:id="@+id/tv_begain_upgrade"
+        android:layout_width="@dimen/dp200"
+        android:layout_height="@dimen/dp50"
+        android:gravity="center"
+        android:text="开始升级"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp18"
+        app:shape_radius="@dimen/dp30"
+        app:shape_solidColor="@color/color_999999"
+        app:shape_solidPressedColor="@color/color_1A000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

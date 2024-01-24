@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_top"
+    tools:context=".ui.activity.ImageLocalActivity">
+
+    <hf.car.wifi.video.ui.custom.TopToolBar
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:center_title="@string/tv_image_local_page"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp0"
+        android:layout_marginStart="@dimen/dp12"
+        android:layout_marginTop="@dimen/dp14"
+        android:layout_marginEnd="@dimen/dp12"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/bg_white_top_r12"
+        android:paddingStart="@dimen/dp8"
+        android:paddingTop="@dimen/dp8"
+        android:paddingEnd="@dimen/dp8"
+        app:layout_constraintBottom_toTopOf="@id/btn_submit"
+        app:layout_constraintTop_toBottomOf="@id/top_bar">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:spanCount="3"
+            tools:itemCount="14"
+            tools:listitem="@layout/item_local_image" />
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_submit"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginStart="@dimen/dp16"
+        android:layout_marginEnd="@dimen/dp16"
+        android:layout_marginBottom="@dimen/dp16"
+        android:background="@drawable/common_button"
+        android:text="@string/tv_dialog_submit"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp14"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:padding="@dimen/dp5"
+        android:text="开始时间:"
+        android:id="@+id/tv_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="@dimen/dp5"
+        android:padding="@dimen/dp5"
+        android:text="结束时间:"
+        android:id="@+id/tv_end"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_start" />
+
+
+
+</RelativeLayout>
